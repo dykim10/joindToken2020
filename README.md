@@ -29,8 +29,8 @@
 
 
 >   참고 페이지       
-https://laravel.kr/docs/8.x/ -- 라라벨 8.x 가이드 문서       
-https://dev-yakuza.github.io/ko/laravel/jwt/    -- JWT의 이해       
+1. https://laravel.kr/docs/8.x/ -- 라라벨 8.x 가이드 문서       
+2. https://dev-yakuza.github.io/ko/laravel/jwt/    -- JWT의 이해       
 * * *
 
 
