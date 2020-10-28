@@ -26,11 +26,11 @@ class MemberController extends Controller
     }
 
     /**
-     * 회원가입 - 주석은 이런식으로 함수앞에 
+     * 회원가입
      *
      * @param Request $request
      * @return void
-     */
+    */
     public function join(Request  $request){
 
         $validator = Validator::make($request->all(), [
@@ -53,7 +53,7 @@ class MemberController extends Controller
         //dd("END");
         
         $userData = array();
-        if($validator->fails()) {   //데이터 검증실패!
+        if($validator->fails()) {//데이터 검증실패!
 
             LOG::info("log ==> " . $validator->messages() );
             $userData['message'] = '필수 파라미터[이름/이메일/패스워드] 정보를 확인할 수 없습니다. ';
@@ -73,7 +73,7 @@ class MemberController extends Controller
      * @param Request $request
      * @return void
      * {tip} only 메소드는 유입되는 request-요청에서 입력한 키 / 값 쌍을 반환합니다. 그렇지만 현재 request 에서 존재하지 않는 키/값은 반환하지 않습니다.
-     */
+    */
     public function login(Request  $request){
         $input = $request->only('email', 'password');
         $userData = array();
@@ -148,12 +148,24 @@ class MemberController extends Controller
 
     }
 
-    #유저정보 조회
+    /**
+     * 유저정보 조회
+     *
+     * @param Request $request
+     * @return void
+    */
     public function info(Request  $request){
         return response()->json(Auth::guard('api')->user());
     }
 
-    #로그아웃
+
+    /**
+     * 로그아웃
+     *
+     * @param 
+     * @return void
+    */
+
     public function logout() {
         Auth::guard('api')->logout();
 
@@ -168,7 +180,7 @@ class MemberController extends Controller
      *
      * @param Request $request
      * @return void
-     */
+    */
     public function pwdCheckAddValidator($pwd){
 
         $result = array();
