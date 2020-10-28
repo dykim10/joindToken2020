@@ -4,15 +4,15 @@
 >   작성자 : dykim10iufc@gmail.com
 
 >   개발환경   
->>-  라라벨 8.11.2
->>-  PHP 7.4.0
->>-  mariadb 10.4
->>-  테스터 프로그램 Postman
+-  라라벨 8.11.2
+-  PHP 7.4.0
+-  mariadb 10.4
+-  테스터 프로그램 Postman
 
 
-
-    #회원가입 
-    http://127.0.0.1:3321/v1/member/join
+>   API URI
+>>회원가입 
+>>- http://127.0.0.1:3321/v1/member/join
 
     #로그인
     http://127.0.0.1:3321/v1/member/login
