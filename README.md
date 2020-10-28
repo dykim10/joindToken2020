@@ -1,11 +1,16 @@
 #라라벨 프로젝트 2020/10/24 ~ 10/30
 ==
 
->    #dykim10iufc@gmail.com
->    #라라벨 8.11.2 
->    #PHP 7.4.0
->    #mariadb 10.4
->    #테스터 프로그램 Postman
+>   작성자 : dykim10iufc@gmail.com
+
+>   개발환경   
+>>  라라벨 8.11.2
+
+>>  PHP 7.4.0
+
+>>  mariadb 10.4
+
+>>  테스터 프로그램 Postman
 
     #회원가입 
     http://127.0.0.1:3321/v1/member/join
