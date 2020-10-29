@@ -11,8 +11,8 @@
 * * *
 
 >   API URI       
--   회원가입 [ http://127.0.0.1:3321/v1/member/join ] /PUT      
--   로그인 [ http://127.0.0.1:3321/v1/member/login ] /POST             
+-   회원가입 [ http://127.0.0.1:3321/v1/member/join ] /POST      
+-   로그인 [ http://127.0.0.1:3321/v1/member/login ]              
 -   정보조회 [ http://127.0.0.1:3321/v1/member/info ] /GET              
 -   route 설정 [www\routes\api.php]           
 * * *
